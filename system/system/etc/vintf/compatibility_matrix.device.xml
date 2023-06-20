@@ -1,0 +1,33 @@
+<!--
+    Input:
+        device_framework_matrix_product_tangorpro.xml
+-->
+<compatibility-matrix version="5.0" type="framework" level="7">
+    <hal format="hidl" optional="false">
+        <name>android.hardware.audio</name>
+        <version>7.1</version>
+        <interface>
+            <name>IDevicesFactory</name>
+            <instance>mediashell</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>device.google.atv.audio_proxy</name>
+        <interface>
+            <name>IAudioProxy</name>
+            <instance>mediashell</instance>
+        </interface>
+    </hal>
+    <sepolicy>
+        <kernel-sepolicy-version>30</kernel-sepolicy-version>
+        <sepolicy-version>28.0</sepolicy-version>
+        <sepolicy-version>29.0</sepolicy-version>
+        <sepolicy-version>30.0</sepolicy-version>
+        <sepolicy-version>31.0</sepolicy-version>
+        <sepolicy-version>32.0</sepolicy-version>
+        <sepolicy-version>33.0</sepolicy-version>
+    </sepolicy>
+    <avb>
+        <vbmeta-version>1.0</vbmeta-version>
+    </avb>
+</compatibility-matrix>
