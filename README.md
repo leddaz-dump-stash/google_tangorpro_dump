@@ -1,0 +1,14 @@
+# tangorpro-user 13 TQ3A.230605.009.A1 10100517 release-keys
+- manufacturer: google
+- platform: gs201
+- codename: tangorpro
+- flavor: tangorpro-user
+- release: 13
+- id: TQ3A.230605.009.A1
+- incremental: 10100517
+- tags: release-keys
+- fingerprint: google/tangorpro/tangorpro:13/TQ3A.230605.009.A1/10100517:user/release-keys
+- is_ab: true
+- brand: google
+- branch: tangorpro-user-13-TQ3A.230605.009.A1-10100517-release-keys
+- repo: google_tangorpro_dump
