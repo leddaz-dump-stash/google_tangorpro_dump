@@ -1,0 +1,4 @@
+service fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.fpc42
+    class hal
+    user system
+    group system input uhid

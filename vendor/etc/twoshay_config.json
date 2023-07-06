@@ -1,0 +1,52 @@
+{
+	"pipelines": [
+		{
+			"name": "default",
+			"device": "/dev/touch_offload",
+			"algorithms": [
+				{
+					"class": "SegmentationAlgorithm",
+					"name": "segmentation",
+				},
+				{
+					"class": "GripSuppressionAlgorithm",
+					"name": "grip_suppression",
+					"blocked_by": ["segmentation"],
+					"parameters": {
+						"gripEnableCancel": true,
+						"palmEnableCancel": true
+					}
+				},
+				{
+					"class": "StylusPalmAlgorithm",
+					"name": "stylus_palm_suppression",
+					"blocked_by": ["grip_suppression"],
+					"parameters": {
+						"enable_cancel": true,
+						"enable_debug_log": true,
+						"decision_threshold": 1.6,
+						"finger_threshold_margin": 1.6,
+						"palm_threshold_margin": 1.5,
+						"landed_time_threshold": 0.1,
+						"confident_palm_threshold": 2.2
+					}
+				},
+				{
+					"class": "TouchflowAlgorithm",
+					"name": "touchflow",
+					"blocked_by": ["stylus_palm_suppression"],
+				},
+				{
+					"class": "ReportingAlgorithm",
+					"name": "reporting",
+					"blocked_by": ["touchflow"],
+				},
+				{
+					"class": "TouchSuezAlgorithm",
+					"name": "touchsuez",
+					"blocked_by": ["reporting"],
+				}
+			],
+		}
+	]
+}
