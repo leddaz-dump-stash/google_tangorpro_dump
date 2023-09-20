@@ -1,0 +1,12 @@
+vendor/apex/com.google.pixel.camera.hal.apex.xz
+product/app/Photos/Photos.apk.xz
+product/app/PrebuiltGmail/PrebuiltGmail.apk.xz
+product/app/YouTube/YouTube.apk.xz
+product/priv-app/AndroidMediaShell/AndroidMediaShell.apk.xz
+product/priv-app/DevicePersonalizationPrebuiltPixelTablet2023/DevicePersonalizationPrebuiltPixelTablet2023.apk.xz
+product/priv-app/GoogleCamera/GoogleCamera.apk.xz
+product/priv-app/GoogleHomePrebuilt/GoogleHomePrebuilt.apk.xz
+product/priv-app/PixelLiveWallpaperPrebuilt/PixelLiveWallpaperPrebuilt.apk.xz
+product/priv-app/PrebuiltBugle/PrebuiltBugle.apk.xz
+product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk.xz
+product/priv-app/Velvet/Velvet.apk.xz
